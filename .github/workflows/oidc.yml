@@ -43,7 +43,7 @@ jobs:
         run: |
           # Gateway Roleの権限を使ってターゲットロールのCredentialsを取得
           CREDS=$(aws sts assume-role \
-            --role-arn arn:aws:iam::844649515264:role/Platform-Provision-Role \
+            --role-arn arn:aws:iam::844649515264:role/Org-Lifecycle-Role \
             --role-session-name deployment-session \
             --query "Credentials" \
             --output json)
