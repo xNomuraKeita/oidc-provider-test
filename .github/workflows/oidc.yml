@@ -1,0 +1,14 @@
+name: oidc test
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: test
+        run: echo "hoge"
